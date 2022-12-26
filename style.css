@@ -1,0 +1,48 @@
+.section {
+    background-color: white;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 150;
+}
+
+@media screen and (max-device-width: 700px) {
+    div.large {
+        display: none;
+    }
+
+    div.small {
+        display: block;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-device-width: 200px) {
+    div.small {
+        display: block;
+        width: 350px;
+        height: 200px;
+        margin: auto;
+    }
+
+    div.large {
+        display: none;
+    }
+}
+
+@media screen and (min-device-width:700px) {
+    div.small {
+        display: none;
+    }
+
+    div.large {
+        display: block;
+        width: 650px;
+        height: 450px;
+        margin: auto;
+    }
+}
